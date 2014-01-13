@@ -14,7 +14,7 @@ public class Hand {
     public Hand(int numCards) {
         this.numCards = numCards;
         cardAtHand = new Card[numCards]; // Aggregation
-        
+
         shuffle();
         pickRandomCard();
     }

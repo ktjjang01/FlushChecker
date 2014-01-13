@@ -51,7 +51,7 @@ public class FlushTest {
     }
 
     public static int getInt(Scanner console, String prompt) {
-    	System.out.print(prompt);
+        System.out.print(prompt);
 
         while (!console.hasNextInt()) {
             console.next();
