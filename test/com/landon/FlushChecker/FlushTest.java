@@ -1,8 +1,6 @@
-package com.landon.flushchecker.test;
+package com.landon.FlushChecker;
 
 import java.util.Scanner;
-
-import com.landon.flushchecker.Hand;
 
 public class FlushTest {
     public static void main(String[] args) {
@@ -60,7 +58,7 @@ public class FlushTest {
         }
         return console.nextInt();
     }
-
+    
     public static void printCards(Hand hand) {
         for (int i = 0; i <= hand.getNumCards() - 1; i++) {
             String rank = hand.getHand()[i].getRankAsString();

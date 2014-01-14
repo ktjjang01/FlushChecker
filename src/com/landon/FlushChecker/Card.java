@@ -1,4 +1,4 @@
-package com.landon.flushchecker;
+package com.landon.FlushChecker;
 
 public class Card {
     // TODO: use enums instead of ints for suits and ranks
@@ -10,15 +10,15 @@ public class Card {
         this.rank = rank;
     }
 
-    public int getSuit() {
+    protected int getSuit() {
         return suit;
     }
 
-    public int getRank() {
+    protected int getRank() {
         return rank;
     }
 
-    public String getSuitAsString() {
+    protected String getSuitAsString() {
         String SUIT;
         if (suit == 0) {
             SUIT = "CLUBS";
@@ -32,7 +32,7 @@ public class Card {
         return SUIT;
     }
 
-    public String getRankAsString() {
+    protected String getRankAsString() {
         String RANK;
         if (rank == 1) {
             RANK = "ACE";

@@ -1,6 +1,7 @@
-package com.landon.flushchecker;
+package com.landon.FlushChecker;
 
 import java.util.Random;
+
 
 public class Hand {
     Random r = new Random();
@@ -19,7 +20,7 @@ public class Hand {
         pickRandomCard();
     }
 
-    public void deal() {
+    protected void deal() {
         for (int i = 0; i <= numCards - 1; i++) {
             cardAtHand[i] = new Card(rSuit, rRank);
             pickRandomCard();
@@ -27,11 +28,11 @@ public class Hand {
         shuffle();
     }
 
-    public int getNumCards() {
+    protected int getNumCards() {
         return this.numCards;
     }
 
-    public Card[] getHand() {
+    protected Card[] getHand() {
         return cardAtHand;
     }
 
