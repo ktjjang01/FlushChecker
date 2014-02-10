@@ -7,8 +7,9 @@ public class FlushTest {
         Scanner console = new Scanner(System.in);
         boolean playAgain = false;
 
+        Introduction();
+
         do {
-            Introduction();
             int numCards = getNumCards(console);
 
             Hand hand = new Hand(numCards);
@@ -33,6 +34,7 @@ public class FlushTest {
         } while (playAgain);
 
         console.close();
+        System.exit(0);
     }
 
     private static void Introduction() {
